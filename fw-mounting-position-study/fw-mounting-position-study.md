@@ -31,11 +31,11 @@ The mechanism is downstream of the tire, not the floor itself: plan-view and bot
 
 | -0.375" | -0.250" |
 |---|---|
-| ![Wake at -0.375](figures/-0.375_velocity-y-0.5.png) | ![Wake at -0.250](figures/-0.250_velocity-y-0.5.png) |
+| ![Wake at -0.375](figures/-0.375-velocity-y-0.5.png) | ![Wake at -0.250](figures/-0.250-velocity-y-0.5.png) |
 
 At the correct height, the front wing's inboard vortex deflects the front-tire wake ("tire squirt") clear of the undertray leading edge. At -0.375" the wing sits too low, and the vortex it sheds doesn't persist long enough to do that job, so the tire wake wraps inboard and floods the undertray inlet with turbulent, low-momentum air instead. That's why the floor's own pressure field is undisturbed (below) while its force output collapses: the undertray isn't being interfered with geometrically, it's being fed worse air.
 
-![Undertray bottom-surface Cp, -0.250 vs -0.375](figures/-0.250_cp-bottom.png)
+![Undertray bottom-surface Cp, -0.250 vs -0.375](figures/-0.250-cp-bottom.png)
 
 Two independent readings of this dataset, force integration and flow-structure inspection, done separately, land in the same place: -0.125" for peak total load, -0.250"/-0.125" as the best-behaved pair overall, -0.375" as the clear failure mode.
 
