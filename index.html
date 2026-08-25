@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Dohyun Yang &mdash; Aerodynamics &amp; ML Portfolio</title>
-<meta name="description" content="Aerodynamics and machine learning portfolio: CFD validation, flow visualization, HPC infrastructure, and manufacturing work.">
+<title>Dohyun Yang</title>
+<meta name="description" content="Dohyun Yang — Aerodynamics Co-Lead, Berkeley Formula Racing. Mechanical Engineering, UC Berkeley.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -16,118 +16,41 @@
   <div class="wrap">
     <a class="brand" href="index.html">Dohyun Yang<span class="dot">.</span></a>
     <nav>
-      <a href="#projects">Projects</a>
+      <a href="projects.html">Projects</a>
       <a href="https://github.com/dohyuny7" target="_blank" rel="noopener">GitHub</a>
       <a href="mailto:dohyuny@berkeley.edu">Email</a>
     </nav>
   </div>
 </header>
 
-<section class="hero">
-  <div class="wrap">
-    <div class="hero-top">
-      <div class="hero-text">
-        <div class="hero-eyebrow">Mechanical Engineering &middot; UC Berkeley</div>
-        <h1>Aerodynamics, validated<span class="accent">.</span></h1>
-        <p class="lede">CFD, physical testing, and the machine learning built around both &mdash; from a Formula SAE rear wing to a from-scratch Navier&ndash;Stokes solver. Every finding here is checked against something: a wind tunnel, an onboard camera, a benchmark, or a second simulation.</p>
+<section class="welcome-section">
+  <div class="wrap welcome-split">
+    <div class="welcome-text">
+      <h1 class="welcome-name">Dohyun Yang</h1>
+      <div class="welcome-role">
+        Aerodynamics Co-Lead <span>&middot; Berkeley Formula Racing</span><br>
+        Mechanical Engineering <span>&middot; UC Berkeley</span>
       </div>
-      <div class="hero-photo">
+      <div class="welcome-bio">
+        <p>I work at the intersection of CFD, physical validation, and applied machine learning &mdash; currently developing the B27 rear wing and the team's simulation infrastructure. Longer term, I'm drawn to the aerodynamics of things that go very fast, whether that's a race car or something considerably less street-legal.</p>
+        <p style="margin-top: 1em;">Outside of BFR: modifying my G70, chasing new music across genres and decades, and building odd little software projects because it's fun.</p>
+      </div>
+      <div class="welcome-cta">
+        <a class="btn-primary" href="projects.html">See the work &rarr;</a>
+        <div class="welcome-social">
+          <a href="https://github.com/dohyuny7" target="_blank" rel="noopener">GitHub</a>
+          <a href="mailto:dohyuny@berkeley.edu">Email</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="welcome-photo-wrap">
+      <div class="welcome-photo">
         <img src="_site-assets/headshot.jpg" alt="Dohyun Yang">
       </div>
     </div>
-
-    <div class="stat-strip">
-      <div class="stat">
-        <div class="stat-value">140+</div>
-        <div class="stat-label">CFD runs executed</div>
-      </div>
-      <div class="stat">
-        <div class="stat-value">20,000+</div>
-        <div class="stat-label">core-hours consumed</div>
-      </div>
-      <div class="stat">
-        <div class="stat-value">13&times;</div>
-        <div class="stat-label">faster convergence (ML warm-start)</div>
-      </div>
-      <div class="stat">
-        <div class="stat-value">10</div>
-        <div class="stat-label">engineers onboarded to HPC relay</div>
-      </div>
-    </div>
   </div>
 </section>
-
-<section class="grid-section" id="projects">
-  <div class="wrap">
-    <h2>Projects</h2>
-    <div class="project-grid">
-
-      <a class="card" href="aero-validation/index.html">
-        <div class="card-image"><img src="aero-validation/figures/whisker-hero.jpg" alt="Oil-flow visualization on a B26 whisker element" loading="lazy"></div>
-        <div class="card-body">
-          <div class="card-tag">CFD + Physical Test</div>
-          <h3>Rear Wing Flow Visualization</h3>
-          <p>On-track oil-flow and tuft testing at competition speed, matched against CFD down to the vortex structure causing the streak pattern.</p>
-        </div>
-      </a>
-
-      <a class="card" href="fw-mounting-position-study/index.html">
-        <div class="card-image"><img src="fw-mounting-position-study/figures/carview-cp-top-front-right.png" alt="B27 front wing mounting position CFD study" loading="lazy"></div>
-        <div class="card-body">
-          <div class="card-tag">CFD Parametric Study</div>
-          <h3>Front Wing Mounting Position</h3>
-          <p>Seven-position sweep reveals the undertray starves before the front wing saturates &mdash; a systems interaction a single-component view would miss.</p>
-        </div>
-      </a>
-
-      <a class="card" href="hpc-pipeline/index.html">
-        <div class="card-image"><img src="hpc-pipeline/figures/submit-panel.png" alt="BFR HPC job relay submit panel" loading="lazy"></div>
-        <div class="card-body">
-          <div class="card-tag">Infrastructure</div>
-          <h3>BFR HPC Job Relay</h3>
-          <p>Rebuilt the team's CFD submission pipeline from a fragile five-hop chain into a two-hop relay ten engineers now run jobs through.</p>
-        </div>
-      </a>
-
-      <a class="card" href="navier-stokes-solver/index.html">
-        <div class="card-image"><img src="navier-stokes-solver/figures/04-streamlines.png" alt="Streamline evolution in the Navier-Stokes solver" loading="lazy"></div>
-        <div class="card-body">
-          <div class="card-tag">ML + Numerical Methods</div>
-          <h3>Navier&ndash;Stokes Solver, ML-Accelerated</h3>
-          <p>A SIMPLE-algorithm solver built from scratch, validated against Ghia et al., then warm-started by a network that predicts converged flow states.</p>
-        </div>
-      </a>
-
-      <a class="card" href="composites-manufacturing/index.html">
-        <div class="card-image"><img src="composites-manufacturing/figures/08-cured-elements-2-3.jpg" alt="Finished carbon fiber front wing elements" loading="lazy"></div>
-        <div class="card-body">
-          <div class="card-tag">Manufacturing</div>
-          <h3>Composites Manufacturing</h3>
-          <p>Mold to finished part: CNC tooling, wet layup, vacuum bagging, and the surface-finish discipline that determines what comes off the mold.</p>
-        </div>
-      </a>
-
-      <div class="card card-pending">
-        <div class="card-image card-image-pending">
-          <span>In progress</span>
-        </div>
-        <div class="card-body">
-          <div class="card-tag">Coming Soon</div>
-          <h3>B27 Rear Wing</h3>
-          <p>Five-element mainplane and biplane development, from the driver-head wake study through final CFD. Paused on final downforce numbers.</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<footer class="site-footer">
-  <div class="wrap">
-    <span>Dohyun Yang &middot; Berkeley, CA</span>
-    <span><a href="https://github.com/dohyuny7" target="_blank" rel="noopener">github.com/dohyuny7</a> &middot; <a href="mailto:dohyuny@berkeley.edu">dohyuny@berkeley.edu</a></span>
-  </div>
-</footer>
 
 </body>
 </html>

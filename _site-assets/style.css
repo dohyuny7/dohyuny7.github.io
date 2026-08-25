@@ -450,6 +450,112 @@ hr {
 }
 
 /* ============================================================
+   Welcome page
+   ============================================================ */
+.welcome-section {
+  min-height: calc(100vh - 65px);
+  display: flex;
+  align-items: center;
+  padding: 48px 0 64px;
+}
+.welcome-split {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 56px;
+  align-items: center;
+}
+.welcome-name {
+  font-size: clamp(2.4rem, 5.5vw, 3.6rem);
+  margin-bottom: 4px;
+  opacity: 0;
+  animation: rise 0.6s ease forwards;
+}
+.welcome-role {
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  color: var(--blue);
+  line-height: 1.7;
+  margin-bottom: 28px;
+  opacity: 0;
+  animation: rise 0.6s ease 0.08s forwards;
+}
+.welcome-role span {
+  color: var(--text-dim);
+}
+.welcome-bio p {
+  font-size: 1.05rem;
+  color: var(--text-dim);
+  max-width: 52ch;
+  opacity: 0;
+  animation: rise 0.6s ease 0.16s forwards;
+}
+.welcome-cta {
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  opacity: 0;
+  animation: rise 0.6s ease 0.24s forwards;
+}
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--gold);
+  color: #14171c;
+  font-family: var(--font-mono);
+  font-size: 0.88rem;
+  font-weight: 500;
+  padding: 12px 22px;
+  border-radius: var(--radius-sm);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+.btn-primary:hover {
+  color: #14171c;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px -6px rgba(253, 181, 21, 0.4);
+}
+.welcome-social {
+  display: flex;
+  gap: 18px;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+}
+.welcome-social a { color: var(--text-dim); }
+.welcome-social a:hover { color: var(--gold); }
+
+.welcome-photo-wrap {
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  animation: rise 0.6s ease 0.1s forwards;
+}
+.welcome-photo {
+  width: 100%;
+  max-width: 340px;
+  aspect-ratio: 4/5;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--border-bright);
+  box-shadow: 0 24px 60px -24px rgba(0,0,0,0.6);
+}
+.welcome-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+  border-radius: 0;
+}
+
+@media (max-width: 760px) {
+  .welcome-split { grid-template-columns: 1fr; gap: 32px; }
+  .welcome-photo-wrap { order: -1; }
+  .welcome-photo { max-width: 220px; }
+  .welcome-section { padding: 32px 0 48px; }
+}
+
+/* ============================================================
    Responsive
    ============================================================ */
 @media (max-width: 640px) {
