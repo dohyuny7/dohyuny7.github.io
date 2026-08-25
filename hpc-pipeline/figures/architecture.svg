@@ -1,0 +1,106 @@
+<svg viewBox="0 0 1200 640" xmlns="http://www.w3.org/2000/svg" font-family="'Space Grotesk', 'Segoe UI', sans-serif">
+  <defs>
+    <style>
+      .box { fill: #161b22; stroke: #30363d; stroke-width: 1.5; rx: 10; }
+      .box-accent { fill: #1b2130; stroke: #4da3ff; stroke-width: 1.5; rx: 10; }
+      .box-gold { fill: #1e1a10; stroke: #FDB515; stroke-width: 1.5; rx: 10; }
+      .title { fill: #e8eaed; font-size: 18px; font-weight: 700; }
+      .sub { fill: #9aa0aa; font-size: 13px; }
+      .mono { fill: #c9d1d9; font-size: 12px; font-family: 'SF Mono', 'Consolas', monospace; }
+      .arrow { stroke: #4da3ff; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+      .arrow-gold { stroke: #FDB515; stroke-width: 2; fill: none; marker-end: url(#arrowhead-gold); }
+      .arrow-dim { stroke: #4a5160; stroke-width: 1.5; fill: none; stroke-dasharray: 4 3; marker-end: url(#arrowhead-dim); }
+      .label { fill: #9aa0aa; font-size: 11px; }
+      .label-gold { fill: #FDB515; font-size: 11px; font-weight: 600; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <polygon points="0 0, 10 4, 0 8" fill="#4da3ff"/>
+    </marker>
+    <marker id="arrowhead-gold" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <polygon points="0 0, 10 4, 0 8" fill="#FDB515"/>
+    </marker>
+    <marker id="arrowhead-dim" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <polygon points="0 0, 10 4, 0 8" fill="#4a5160"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="640" fill="#0f1115"/>
+
+  <!-- Browser -->
+  <rect class="box" x="40" y="260" width="180" height="120" rx="10"/>
+  <text class="title" x="130" y="310" text-anchor="middle">Browser</text>
+  <text class="sub" x="130" y="332" text-anchor="middle">teammate / recruit</text>
+  <text class="sub" x="130" y="352" text-anchor="middle">no Linux experience needed</text>
+
+  <!-- arrow 1 -->
+  <path class="arrow" d="M220,300 L340,300"/>
+  <text class="label" x="280" y="290" text-anchor="middle">HTTPS</text>
+  <text class="label" x="280" y="325" text-anchor="middle">self-signed TLS</text>
+
+  <!-- Oracle VM box -->
+  <rect class="box-accent" x="340" y="150" width="360" height="340" rx="10"/>
+  <text class="title" x="520" y="185" text-anchor="middle" fill="#4da3ff">Oracle Cloud VM</text>
+  <text class="sub" x="520" y="205" text-anchor="middle">always-free tier &#183; systemd-managed</text>
+
+  <rect class="box" x="365" y="222" width="310" height="50" rx="8"/>
+  <text class="mono" x="520" y="242" text-anchor="middle">relay.py</text>
+  <text class="label" x="520" y="260" text-anchor="middle">aiohttp &#183; serves frontend + API</text>
+
+  <rect class="box" x="365" y="282" width="145" height="60" rx="8"/>
+  <text class="mono" x="437" y="303" text-anchor="middle">live_monitor</text>
+  <text class="label" x="437" y="320" text-anchor="middle">persistent SSH</text>
+  <text class="label" x="437" y="334" text-anchor="middle">feeds /api/stream (SSE)</text>
+
+  <rect class="box" x="530" y="282" width="145" height="60" rx="8"/>
+  <text class="mono" x="602" y="303" text-anchor="middle">live_io</text>
+  <text class="label" x="602" y="320" text-anchor="middle">persistent SSH</text>
+  <text class="label" x="602" y="334" text-anchor="middle">submit / download / delete</text>
+
+  <rect class="box" x="365" y="354" width="145" height="50" rx="8"/>
+  <text class="mono" x="437" y="374" text-anchor="middle">core.py</text>
+  <text class="label" x="437" y="392" text-anchor="middle">validation, resources</text>
+
+  <rect class="box" x="530" y="354" width="145" height="50" rx="8"/>
+  <text class="mono" x="602" y="374" text-anchor="middle">ssh_backend.py</text>
+  <text class="label" x="602" y="392" text-anchor="middle">+ mock, for tests</text>
+
+  <text class="label" x="520" y="425" text-anchor="middle">956 MB RAM &#183; streaming I/O, no full-file buffering</text>
+  <text class="label" x="520" y="443" text-anchor="middle">3 test suites, 37+ assertions against MockSSHBackend</text>
+  <text class="label" x="520" y="461" text-anchor="middle">JSON error middleware &#183; path-traversal guards on delete</text>
+
+  <!-- arrow 2 -->
+  <path class="arrow" d="M700,300 L820,300"/>
+  <text class="label" x="760" y="290" text-anchor="middle">asyncssh</text>
+  <text class="label" x="760" y="325" text-anchor="middle">key-based auth</text>
+
+  <!-- Sabalcore box -->
+  <rect class="box" x="820" y="150" width="340" height="340" rx="10"/>
+  <text class="title" x="990" y="185" text-anchor="middle">Sabalcore HPC Cluster</text>
+  <text class="sub" x="990" y="205" text-anchor="middle">60,000 sponsored core-hours &#183; PBS/Torque</text>
+
+  <rect class="box" x="845" y="225" width="290" height="70" rx="8"/>
+  <text class="mono" x="990" y="248" text-anchor="middle">submit.pbs.tmpl</text>
+  <text class="label" x="990" y="266" text-anchor="middle">master-node oversubscription fix</text>
+  <text class="label" x="990" y="282" text-anchor="middle">per-job cluster / core-count selection</text>
+
+  <rect class="box" x="845" y="305" width="290" height="70" rx="8"/>
+  <text class="mono" x="990" y="328" text-anchor="middle">-batch mesh,run,export_scenes.java</text>
+  <text class="label" x="990" y="346" text-anchor="middle">geometry &#8594; mesh &#8594; solve &#8594; export</text>
+  <text class="label" x="990" y="362" text-anchor="middle">single STAR-CCM+ batch process, no reload</text>
+
+  <rect class="box" x="845" y="385" width="290" height="70" rx="8"/>
+  <text class="mono" x="990" y="408" text-anchor="middle">post_&lt;run&gt;.zip</text>
+  <text class="label" x="990" y="426" text-anchor="middle">every scene &#8594; PNG</text>
+  <text class="label" x="990" y="442" text-anchor="middle">force_reports.txt &#8212; raw, half-car, per BFR_CFD_Standards</text>
+
+  <!-- SSE return path -->
+  <path class="arrow-gold" d="M520,150 C 520,90 280,90 130,150 C 130,190 130,220 130,260" fill="none"/>
+  <text class="label-gold" x="330" y="80" text-anchor="middle">/api/stream (SSE) &#8212; live qstat + cluster availability, push not poll</text>
+
+  <!-- Decommissioned path, dimmed -->
+  <rect class="box" x="40" y="500" width="1120" height="90" rx="10" fill="#14161b" stroke="#2a2f3a" stroke-dasharray="5 4"/>
+  <text class="sub" x="60" y="528" fill="#6a7280">Decommissioned &#8212; original architecture</text>
+  <text class="mono" x="60" y="555" fill="#565d68" font-size="13">Browser &#8594; GitHub Pages frontend &#8594; ngrok/Tailscale tunnel &#8594; FastAPI on a personal Windows machine (SC1) &#8594; Sabalcore</text>
+  <text class="label" x="60" y="576" fill="#565d68">Five hops, one of them a laptop that had to stay powered on and connected for the tool to work at all.</text>
+
+</svg>
