@@ -1,3 +1,21 @@
+/* Scroll progress bar with car marker — runs on every page. */
+(function () {
+  const fill = document.getElementById('progress-fill');
+  const marker = document.getElementById('progress-marker');
+  if (!fill || !marker) return;
+
+  function update() {
+    const scrollTop = window.scrollY;
+    const height = document.documentElement.scrollHeight - window.innerHeight;
+    const pct = height > 0 ? Math.min(100, Math.max(0, (scrollTop / height) * 100)) : 0;
+    fill.style.width = pct + '%';
+    marker.style.left = pct + '%';
+  }
+  window.addEventListener('scroll', update, { passive: true });
+  window.addEventListener('resize', update);
+  update();
+})();
+
 /* Renders a project's markdown file into #content.
    Expects a data-md attribute on the <main id="content"> element
    pointing at the markdown file, relative to the current page. */
