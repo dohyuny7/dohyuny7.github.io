@@ -3,15 +3,15 @@
 # Composites Manufacturing
 
 **Berkeley Formula Racing - B27 front wing elements**
-CNC-machined foam tooling, wet layup, vacuum bagging
+CNC-machined foam tooling, wet layup, carbon post-processing
 
-The front wing elements go from a machined foam mold to a finished carbon part entirely in-house. The process is a fairly standard wet-layup sandwich construction, but the finish quality comes down to a lot of unglamorous sanding at both ends of it, on the mold before layup and on the part after cure.
+The front wing elements go from a machined foam mold to a finished carbon part entirely in-house. The process is a fairly standard wet-layup construction, but the finish quality comes down to a lot of unglamorous sanding at both ends of it, on the mold before layup and on the part after curing.
 
 ## Mold and surface prep
 
 ![Sanding the element 1 mold](figures/01-sanding.jpg)
 
-Molds are machined from high-density foam on the team's ShopSabre CNC, then coated in Duratec, a surfacing primer that fills the foam's texture and gives something worth polishing. From there it is a long grit progression on an orbital sander: 80, 120, 200, 400, 600, 800, 1000, 1500, then 2000, finished with wax. Since this is a female mold, whatever finish goes onto the tool comes off on the part, so this stage sets the ceiling for how good the final surface can look.
+Molds are machined from high-density foam on the team's ShopSabre CNC, then coated in Duratec, a surfacing primer that fills the foam's porous surface and applies a polishable surface. From there, it is a long grit progression on an orbital sander: 80, 120, 200, 400, 600, 800, 1000, 1500, then 2000, finished with wax. Since this is a female mold, whatever finish goes onto the tool comes off on the part, so this stage sets the ceiling for how good the final surface can look.
 
 ## Layup
 
@@ -19,11 +19,11 @@ Molds are machined from high-density foam on the team's ShopSabre CNC, then coat
 
 ![Element laid up on the mold](figures/03-layup.jpg)
 
-Plies are cut at 0 and 45 degrees, two per skin, with epoxy brushed on by hand rather than using pre-preg. The layup is a symmetric sandwich: 90, 45, a Rohacell foam core, then 45, 90 again, mirrored to keep the laminate balanced and prevent warping as it cures.
+Plies are cut at 0 and 45 degrees, two per half, with epoxy brushed on by hand. The layup is a symmetric sandwich: 0, 45, a Rohacell foam core, then 45, 0 again, mirrored to keep the laminate balanced and prevent warping as it cures.
 
 ![Signatures on the Rohacell core](figures/04-rohacell-core.jpg)
 
-Before the core goes in, whoever is on the layup signs it. It has no structural purpose and doesn't show up in any report, but it's a team tradition on every aero part the team lays up, and it's the kind of detail that only exists because people actually enjoy building these.
+Before the core goes in, whoever is working on the layup signs it. It serves no structural purpose and does not alter the visual finish of the car, but it's a long-standing aero team tradition on every component the team lays up. Our way of leaving our legacy on the cars we build. 
 
 ## Vacuum bagging and cure
 
@@ -37,6 +37,6 @@ A layer of peel ply goes directly over the part, under the breather and bag, so 
 
 ![Cured and finished element 1](figures/07-cured-element-1.jpg)
 
-After demolding, the part gets a quick finish sand at 1500 and 2000 grit, a coat of wax, and two coats of clear. The three front wing elements below came off this process; elements 2 and 3 in particular came out with enough clarity in the weave that you can see individual tows under the clear coat.
+After demolding, the part gets a quick finish sand at 1500 and 2000 grit, a coat of wax, and two coats of clear. Elements 2 and 3 (very first image) in particular came out particularly well. The reflective carbon finish is beautiful and is usually one of the first parts people look at on the car. 
 
-The mold and layup process above is common to every carbon part on B27, from wing elements to the nosecone and undertray. It is slower than buying finished components, but it means every surface the car runs is one the team actually made.
+The mold and layup process above is shared between every carbon part on our cars, from wing elements to the nosecone and undertray.
