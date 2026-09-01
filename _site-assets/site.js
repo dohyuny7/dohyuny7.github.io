@@ -16,6 +16,28 @@
   update();
 })();
 
+function wireImageSkeleton(img) {
+  const wrap = img.closest('.card-image');
+  function mark() {
+    img.classList.add('is-loaded');
+    if (wrap) wrap.classList.add('is-loaded');
+  }
+  if (img.complete && img.naturalWidth > 0) {
+    mark();
+  } else {
+    img.addEventListener('load', mark);
+    img.addEventListener('error', mark);
+  }
+}
+
+function wireAllImageSkeletons(root) {
+  (root || document).querySelectorAll('img').forEach(wireImageSkeleton);
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  wireAllImageSkeletons(document);
+});
+
 /* Renders a project's markdown file into #content.
    Expects a data-md attribute on the <main id="content"> element
    pointing at the markdown file, relative to the current page. */
