@@ -608,3 +608,51 @@ hr {
   .hero-photo { width: 140px; height: 140px; order: -1; }
   .stat { flex: 1 1 45%; }
 }
+
+
+
+/* ============ Skeleton loading state ============ */
+.card-image {
+  position: relative;
+}
+.card-image::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(100deg, var(--surface-2) 35%, rgba(77,163,255,0.12) 50%, var(--surface-2) 65%);
+  background-size: 250% 100%;
+  animation: skeleton-sweep 1.7s ease-in-out infinite;
+  z-index: 1;
+}
+.card-image.is-loaded::before {
+  animation: none;
+  opacity: 0;
+  transition: opacity 300ms ease;
+}
+.card-image img {
+  opacity: 0;
+  transition: opacity 350ms ease;
+  position: relative;
+  z-index: 2;
+}
+.card-image img.is-loaded {
+  opacity: 1;
+}
+@keyframes skeleton-sweep {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .card-image::before { animation: none; background-position: 0 0; }
+}
+
+.project-content img {
+  background: var(--surface-2);
+  min-height: 220px;
+  opacity: 0;
+  transition: opacity 400ms ease;
+}
+.project-content img.is-loaded {
+  opacity: 1;
+  min-height: 0;
+}
