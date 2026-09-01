@@ -57,6 +57,7 @@ document.addEventListener('DOMContentLoaded', function () {
     .then(function (md) {
       el.innerHTML = marked.parse(md, { gfm: true, breaks: false });
       pairAdjacentImages(el);
+      wireAllImageSkeletons(el);
       document.title = deriveTitle(el) + ' \u2014 Dohyun Yang';
     })
     .catch(function (err) {
